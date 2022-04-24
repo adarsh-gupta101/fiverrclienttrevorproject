@@ -1,6 +1,5 @@
 import React from "react";
-import About from "./components/about";
-import Certifications from "./components/Certifications";
+
 import Footer from "./components/footer";
 import Header from "./components/header";
 import Solutions2 from "./components/solutions";

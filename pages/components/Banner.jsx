@@ -11,18 +11,25 @@ function Banner() {
   const ptagref = useRef();
 
   useEffect(() => {
-    gsap.fromTo(boxRef.current, {x:30, y:90 },{x:0,y:0,duration:1,scrollTrigger:{
+    const element = boxRef.current;
+
+    gsap.fromTo(boxRef.current, {x:30, y:90,opacity:0 },{x:0,y:0,opacity:1,duration:1,scrollTrigger:{
       trigger:boxRef.current,
+      // scrub:1
     }});
     gsap.fromTo(ptagref.current, {x:-30, y:-90 },{x:0,y:0,scrollTrigger:{
       trigger:boxRef.current,
+      scrub:true
     }});
+    gsap.fromTo("#svg", {y:205,opacity:0 },{y:0,opacity:1,duration:1.5,},{
+      scrub:true,
+    });
   });
   return (
     <div className=' w-full flex flex-col-reverse md:flex-row md:justify-center md:items-center bg-green-100' style={{fontFamily:"poppins"}}>
       <div className='flex-col  top-0    '>
-        <img src='/assets/header1.png' className='w-full h-full '></img>
-        {/* <img src="/assets/headerrectangle.svg"  className="w-3/4 h-3/4  "></img> */}
+        <img alt="" src='/assets/header1.png' className='w-full h-full relative '></img>
+        <img alt="" src="/assets/headerrectangle.svg" id="svg" className="w-2/5 h-90 absolute top-0 left-0 overflow-hidden "></img >
       </div>
       <h1 className='text-4xl p-2 md:p-0 md:text-8xl w-2/3 font-semibold ' ref={boxRef}>
         WE&apos;RE HUMANS & IT EXPERTS
@@ -31,6 +38,7 @@ function Banner() {
         Everywhere in Canada, ITI makes IT accessible to free up businesses to
         change and improve their competitiveness.
       </p>
+      <div className="health h-12"></div>
     </div>
   );
 }

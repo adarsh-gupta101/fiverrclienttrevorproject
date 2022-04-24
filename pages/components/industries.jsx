@@ -17,16 +17,20 @@ function Industries() {
       element.querySelector("#advicehead"),
       {
         y: 0,
-        rotate:0,
+        zoom:1.3
 
       },
       {
-        y: -100,
+        y: -10,
+        opacity:1,
         rotate:0,
+        zoom:1,
+        maxHeight:20,
+        duration:1.5,
         scrollTrigger: {
           trigger: element.querySelector("#advicehead"),
           start: "top center",
-          scrub: true,
+          scrub:true
         },
       },
       gsap.fromTo(
@@ -40,7 +44,6 @@ function Industries() {
           scrollTrigger: {
             trigger: element.querySelector("#slider"),
             start: "top center",
-            scrub: true,
           },
         }
       
@@ -51,7 +54,7 @@ function Industries() {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 2.8,
+    slidesToShow: 3,
     slidesToScroll: 2,
     responsive: [
       {
@@ -81,7 +84,7 @@ function Industries() {
     ],
   };
   return (
-    <div ref={ref} className='md:p-12' style={{ maxWidth: "100vw", overflow: "hidden" }}>
+    <div  ref={ref} className=' indus md:p-12' style={{ maxWidth: "100vw", overflow: "hidden" }}>
       <Head>
         <link
           rel='stylesheet'
@@ -98,14 +101,14 @@ function Industries() {
 
       <p className='text-4xl mt-12 text-center md:text-left md:text-2xl text-gray-500 p-2 md:p-0'>Industries</p>
 
-      <h1 id="advicehead" className=' p-2 md:p-0 text-4xl text-center m-auto md:text-8xl w-11/12 font-bold'>
+      <h1 id="advicehead" className=' p-2 md:p-0 text-5xl flex items-center text-center m-auto md:text-8xl md:w-11/12 font-bold' style={{height:"100vh"}}>
         WE ADVISE MORE THAN 1500 COMPANIES FROM ALL SECTORS
       </h1>
 
       <Slider {...settings} id="slider">
         {inus.map((item, index) => (
-          <div key={index} id="sliderdiv" className='md:m-2 p-8 md:p-16 '>
-            <img src={item.image} className='w-full h-full'></img>
+          <div key={index} id="sliderdiv" className='shadow-lg m-1 hover:shadow-sm md:m-2 p-8 md:p-16 '>
+            <img alt="" src={item.image} className='w-full h-full'></img>
             <p className='bg-white shadow-xl w-fit p-2 text-xl rounded relative -top-4 left-1/2 hover:bg-blue-700 hover:text-white'>
               View Industry
             </p>

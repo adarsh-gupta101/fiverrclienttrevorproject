@@ -4,11 +4,7 @@ import Json from "./solutionutils.json";
 import Induvidualsolution from "./Induvidualsolution";
 
 function Solutionscontainer() {
-  const [isOpen, setOpen] = useState(false);
-  const [isOpen1, setOpen1] = useState(false);
-  const [isOpen2, setOpen2] = useState(false);
-  const [isOpen3, setOpen3] = useState(false);
-  const [isOpen4, setOpen4] = useState(false);
+ 
 
   return (
   
