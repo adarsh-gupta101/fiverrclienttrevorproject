@@ -1,0 +1,36 @@
+[
+    {
+        "name":"Medium Enterprise"  ,
+    "description":"To remain competitive, SMEs seek to do more with less, while gaining agility and productivity. Information technology offers this edge" ,
+   "image":"assets/meeting.jpg"}
+   ,
+   {
+       "name":"Small Business" ,
+       "description":"To remain competitive, SMEs seek to do more with less, while gaining agility and productivity. Information technology offers this edge"
+       ,"image":"assets/meeting.jpg"}
+   
+   
+   ,{
+       "name":"Enterprise" ,
+       "description":"To remain competitive, SMEs seek to do more with less, while gaining agility and productivity. Information technology offers this edge"
+       ,"image":"assets/meeting.jpg"}
+       ,{
+        "name":"Medium Enterprise"  ,
+    "description":"To remain competitive, SMEs seek to do more with less, while gaining agility and productivity. Information technology offers this edge" ,
+   "image":"assets/meeting.jpg"}
+   ,
+   {
+       "name":"Small Business" ,
+       "description":"To remain competitive, SMEs seek to do more with less, while gaining agility and productivity. Information technology offers this edge"
+       ,"image":"assets/meeting.jpg"}
+   
+   
+   ,{
+       "name":"Enterprise" ,
+       "description":"To remain competitive, SMEs seek to do more with less, while gaining agility and productivity. Information technology offers this edge"
+       ,"image":"assets/meeting.jpg"}
+      
+
+
+
+]
