@@ -27,11 +27,11 @@ rotate:25      },
       <div>
         {" "}
         <span className='md:text-8xl  z-1 top-0 md:relative text-center h-full flex items-center text-white'>
-          <p className='itsol font-bold '>OUR IT SOLUTIONS</p>
+          <p className='itsol font-bold text-[#e4e71c]'>OUR IT SOLUTIONS</p>
         </span>
       </div>
       <>
-        <p className=' md:hidden bg-gray-800 w-full text-center flex items-center justify-center text-6xl font-bold text-white h-64 absolute z-40 '>
+        <p className=' md:hidden bg-gray-800 w-full text-center flex items-center justify-center text-6xl font-bold text-[#e4e71c] h-64 absolute z-40 '>
           OUR IT SOLUTIONS
         </p>
 

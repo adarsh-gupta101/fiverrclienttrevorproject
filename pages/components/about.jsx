@@ -91,7 +91,7 @@ function About() {
         <p className='font-bold text-xl md:p-2'>
           IT made simple, at a human scale
         </p>
-        <p>
+        <p style={{color:""}}>
           We support you in making your vision a reality and make your digital
           transformation the foundation of your growth.
         </p>

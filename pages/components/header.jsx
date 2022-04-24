@@ -18,7 +18,7 @@ function Header() {
         </ul>
     
 
-        <p><Link href="/">Trends Online</Link></p>
+        <p><Link href="/">TrendsOnline Digital</Link></p>
         <div className='flex flex-col justify-evenly items-center md:hidden'>
         <Hamburger className="md:hidden" toggled={isOpen} toggle={setOpen} />
         </div>

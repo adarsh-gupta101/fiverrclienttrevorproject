@@ -26,15 +26,15 @@ function Banner() {
     });
   });
   return (
-    <div className=' w-full flex flex-col-reverse md:flex-row md:justify-center md:items-center bg-green-100' style={{fontFamily:"poppins"}}>
+    <div className=' w-full flex flex-col-reverse md:flex-row md:justify-center md:items-center bg-blue-100' style={{fontFamily:"poppins"}}>
       <div className='flex-col  top-0    '>
         <img alt="" src='/assets/header1.png' className='w-full h-full relative '></img>
-        <img alt="" src="/assets/headerrectangle.svg" id="svg" className="w-2/5 h-90 absolute top-0 left-0 overflow-hidden "></img >
+        <img alt="" src="/assets/headerrectangle.png" id="svg" className="w-2/5 ml-8 hidden md:flex h-90 absolute top-0 left-0 overflow-hidden "></img >
       </div>
-      <h1 className='text-4xl p-2 md:p-0 md:text-8xl w-2/3 font-semibold ' ref={boxRef}>
+      <h1 className='text-4xl p-2 md:p-0 md:text-8xl w-2/3 font-semibold text-[#b3b60f] ' ref={boxRef}>
         WE&apos;RE HUMANS & IT EXPERTS
       </h1>
-      <p ref={ptagref}className='hidden md:block absolute right-0 bottom-12 w-48'>
+      <p ref={ptagref}className='hidden md:block absolute right-0 bottom-12 w-48 text-black]'>
         Everywhere in Canada, ITI makes IT accessible to free up businesses to
         change and improve their competitiveness.
       </p>
